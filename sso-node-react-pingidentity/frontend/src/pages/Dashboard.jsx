@@ -104,8 +104,8 @@ const Dashboard = () => {
       position: "absolute",
       top: "5px",
       right: "10px",
-      width: "200px", // Increased size
-      height: "200px", // Increased size
+      width: "150px", // Increased size
+      height: "150px", // Increased size
     },
   };
 
@@ -113,7 +113,7 @@ const Dashboard = () => {
     <div style={styles.container}>
       <div style={styles.card}>
         <h2 style={styles.title}>Dashboard</h2>
-
+        
         {user ? (
           <div className="text-center">
             <p style={styles.subtitle}>Welcome <strong>{user.name}</strong>!</p>
@@ -137,6 +137,10 @@ const Dashboard = () => {
                 <tr>
                   <td style={styles.tableCell}>Family Name</td>
                   <td style={styles.tableCell}>{user.family_name}</td>
+                </tr>
+                <tr>
+                  <td style={styles.tableCell}>employee_number</td>
+                  <td style={styles.tableCell}>{user.employee_number}</td>
                 </tr>
               </tbody>
             </table>
